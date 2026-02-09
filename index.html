@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Portfolio</title>
-</head>
-<body>
+<p id="text">Click the button</p>
 
-  <h1>Hello, I'm Nomaan</h1>
-  <p>I am learning web development and building projects.</p>
+<button onclick="changeText()">Change Text</button>
 
-  <button onclick="sayHello()">Click me</button>
-
-  <script>
-    function sayHello() {
-      alert("Hello Nomaan 👋");
-    }
-  </script>
-
-</body>
-</html>
+<script>
+  function changeText() {
+    document.getElementById("text").innerText = "You just used JavaScript 😎";
+  }
+</script>
